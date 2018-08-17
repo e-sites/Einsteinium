@@ -12,6 +12,7 @@ A collection of swift extensions
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Einsteinium.svg)](http://cocoadocs.org/docsets/Einsteinium)
 [![Quality](https://apps.e-sites.nl/cocoapodsquality/Einsteinium/badge.svg?004)](https://cocoapods.org/pods/Einsteinium/quality)
 [![Travis-ci](https://travis-ci.org/e-sites/Einsteinium.svg?branch=master&001)](https://travis-ci.org/e-sites/Einsteinium)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 
 # Installation
