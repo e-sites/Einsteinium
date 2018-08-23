@@ -14,8 +14,12 @@ public protocol UINibView {
 }
 
 extension UINibView {
-	public static func instanceFromNib(name nibName: String? = nil) -> Self? {
-		let nibName = nibName ?? "\(self)"
-		return UINib(nibName: nibName, bundle: nil).instantiate(withOwner: nil, options: nil)[0] as? Self
+	public static func instanceFromNib(name nibName: String? = nil) -> Self {
+        let nibName = nibName ?? String(describing: self)
+        
+        guard let nib = UINib(nibName: nibName, bundle: nil).instantiate(withOwner: nil, options: nil).first, nib is Self else {
+            fatalError("Cannot find nib for '\(nibName)'")
+        }
+        return nib as! Self
 	}
 }
