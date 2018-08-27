@@ -1,0 +1,10 @@
+source "https://rubygems.org"
+
+gem "fastlane"
+gem "cocoapods"
+gem "ruby-progressbar"
+gem "ruby-keychain"
+gem "terminal-table"
+gem "xcode-install"
+gem "nokogiri"
+gem "htmlentities"

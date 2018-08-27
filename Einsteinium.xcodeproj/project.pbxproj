@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3004C56F2134121600524DA0 /* DesignableXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004C56E2134121600524DA0 /* DesignableXib.swift */; };
+		81D5727537D67BC44046C13D /* Pods_Einsteinium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130D7CF1B668180AC385FC2C /* Pods_Einsteinium.framework */; };
 		C3A38CDB20FDED0300423303 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A38CDA20FDED0300423303 /* Bundle.swift */; };
 		C3A38CDD20FDEF8700423303 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB3321E1D6457B90057778F /* UINavigationController.swift */; };
 		C3A38CDF20FDF01700423303 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A38CDE20FDF01700423303 /* Optional.swift */; };
@@ -38,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		130D7CF1B668180AC385FC2C /* Pods_Einsteinium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Einsteinium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BB2CD2DF62D92F9C7D7C1B7 /* Pods-Einsteinium.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Einsteinium.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Einsteinium/Pods-Einsteinium.debug.xcconfig"; sourceTree = "<group>"; };
+		3004C56E2134121600524DA0 /* DesignableXib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableXib.swift; sourceTree = "<group>"; };
+		58B67B117B0900401C695357 /* Pods-Einsteinium.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Einsteinium.release.xcconfig"; path = "Pods/Target Support Files/Pods-Einsteinium/Pods-Einsteinium.release.xcconfig"; sourceTree = "<group>"; };
 		C3A38CDA20FDED0300423303 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		C3A38CDE20FDF01700423303 /* Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
 		C3A38CE120FDF03800423303 /* EinsteiniumTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EinsteiniumTests.swift; sourceTree = "<group>"; };
@@ -64,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81D5727537D67BC44046C13D /* Pods_Einsteinium.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		384395B84E251576D3FDE662 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				130D7CF1B668180AC385FC2C /* Pods_Einsteinium.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		745DB66C91770C61F523BC0E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BB2CD2DF62D92F9C7D7C1B7 /* Pods-Einsteinium.debug.xcconfig */,
+				58B67B117B0900401C695357 /* Pods-Einsteinium.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C3A38CE020FDF03800423303 /* EinsteiniumTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +117,8 @@
 				DFB3320C1D6457B90057778F /* Sources */,
 				C3A38CE020FDF03800423303 /* EinsteiniumTests */,
 				DFB331F31D6457970057778F /* Products */,
+				745DB66C91770C61F523BC0E /* Pods */,
+				384395B84E251576D3FDE662 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,6 +189,7 @@
 				DFB3321F1D6457B90057778F /* UITextField.swift */,
 				DFB332201D6457B90057778F /* UIView.swift */,
 				DFB332211D6457B90057778F /* UIViewController.swift */,
+				3004C56E2134121600524DA0 /* DesignableXib.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -184,6 +211,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DFB332061D6457970057778F /* Build configuration list for PBXNativeTarget "Einsteinium" */;
 			buildPhases = (
+				A49AA93262EDF0EBE823163F /* [CP] Check Pods Manifest.lock */,
 				DFB331ED1D6457970057778F /* Sources */,
 				DFB331EE1D6457970057778F /* Frameworks */,
 				DFB331EF1D6457970057778F /* Headers */,
@@ -270,6 +298,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A49AA93262EDF0EBE823163F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Einsteinium-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DFB331ED1D6457970057778F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -290,6 +343,7 @@
 				DFB332281D6457B90057778F /* CLLocationCoordinate2D.swift in Sources */,
 				DF9BC2C11D8AC2E6007D4A54 /* DispatchQueue.swift in Sources */,
 				C3A38CDD20FDEF8700423303 /* UINavigationController.swift in Sources */,
+				3004C56F2134121600524DA0 /* DesignableXib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +466,7 @@
 		};
 		DFB332071D6457970057778F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BB2CD2DF62D92F9C7D7C1B7 /* Pods-Einsteinium.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
@@ -430,6 +485,7 @@
 		};
 		DFB332081D6457970057778F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58B67B117B0900401C695357 /* Pods-Einsteinium.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
