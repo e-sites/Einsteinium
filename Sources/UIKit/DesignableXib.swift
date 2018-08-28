@@ -9,24 +9,24 @@
 import UIKit
 import EasyPeasy
 
-class DesignableXib: UIView {
+public class DesignableXib: UIView {
 
     private var nibName: String {
         return String(describing: type(of: self))
     }
 
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         loadNib()
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         loadNib()
     }
 
     /// Override in custom view class
-    func customInit() {
+    open func customInit() {
         backgroundColor = UIColor.clear
     }
 
