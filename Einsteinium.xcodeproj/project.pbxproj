@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3004C56F2134121600524DA0 /* DesignableXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004C56E2134121600524DA0 /* DesignableXib.swift */; };
 		307877A9213666AB00484865 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307877A8213666AB00484865 /* UIButton.swift */; };
+		307877AB2136679D00484865 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307877AA2136679D00484865 /* Collection.swift */; };
 		81D5727537D67BC44046C13D /* Pods_Einsteinium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130D7CF1B668180AC385FC2C /* Pods_Einsteinium.framework */; };
 		C3A38CDB20FDED0300423303 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A38CDA20FDED0300423303 /* Bundle.swift */; };
 		C3A38CDD20FDEF8700423303 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB3321E1D6457B90057778F /* UINavigationController.swift */; };
@@ -45,6 +46,7 @@
 		1BB2CD2DF62D92F9C7D7C1B7 /* Pods-Einsteinium.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Einsteinium.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Einsteinium/Pods-Einsteinium.debug.xcconfig"; sourceTree = "<group>"; };
 		3004C56E2134121600524DA0 /* DesignableXib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableXib.swift; sourceTree = "<group>"; };
 		307877A8213666AB00484865 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		307877AA2136679D00484865 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		58B67B117B0900401C695357 /* Pods-Einsteinium.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Einsteinium.release.xcconfig"; path = "Pods/Target Support Files/Pods-Einsteinium/Pods-Einsteinium.release.xcconfig"; sourceTree = "<group>"; };
 		C3A38CDA20FDED0300423303 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		C3A38CDE20FDF01700423303 /* Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				DFB3320E1D6457B90057778F /* Array.swift */,
 				DFB332101D6457B90057778F /* String.swift */,
 				C3A38CDE20FDF01700423303 /* Optional.swift */,
+				307877AA2136679D00484865 /* Collection.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				DFB3322F1D6457B90057778F /* UITextField.swift in Sources */,
 				DFB332301D6457B90057778F /* UIView.swift in Sources */,
 				DFB3322A1D6457B90057778F /* URL.swift in Sources */,
+				307877AB2136679D00484865 /* Collection.swift in Sources */,
 				DFB332221D6457B90057778F /* Array.swift in Sources */,
 				DFD8087F1D75AD46004722B7 /* UINibView.swift in Sources */,
 				DFB332311D6457B90057778F /* UIViewController.swift in Sources */,
