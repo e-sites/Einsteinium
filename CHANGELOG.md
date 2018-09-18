@@ -1,5 +1,8 @@
 # Changelog Einsteinium
 
+## v1.1.0 (18-09-2018)
+- Updated to Swift 4.2 / Xcode 10
+
 ## v1.0.4 (29-08-2018)
 - Fix DesignableXib for not being open enough
 - Add minimal hit area for UIButton

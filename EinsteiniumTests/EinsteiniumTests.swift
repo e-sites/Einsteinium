@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import Extensium
+@testable import Einsteinium
 
 class ExtensiumTests: XCTestCase {
     
