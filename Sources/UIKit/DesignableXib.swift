@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import EasyPeasy
 
 public class DesignableXib: UIView {
 
@@ -47,7 +46,14 @@ public class DesignableXib: UIView {
 
         addSubview(contentView)
         contentView.translatesAutoresizingMaskIntoConstraints = false
-        contentView.easy.layout(Edges())
+
+        NSLayoutConstraint.activate([
+            contentView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            contentView.topAnchor.constraint(equalTo: topAnchor),
+            contentView.rightAnchor.constraint(equalTo: rightAnchor),
+            contentView.leftAnchor.constraint(equalTo: leftAnchor)
+        ])
+
 
         customInit()
     }

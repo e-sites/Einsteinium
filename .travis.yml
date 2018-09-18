@@ -1,9 +1,5 @@
 language: objective-c
 osx_image: xcode10
 
-install:
-- bundle install --path vendor/bundle
-- bundle exec pod install
-
 script:
   - xcodebuild -project Einsteinium.xcodeproj -scheme Einsteinium -configuration Debug -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8' clean build
