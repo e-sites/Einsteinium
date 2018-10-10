@@ -11,4 +11,5 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '9.0'
   s.swift_version = '4.2'
   s.requires_arc = true
+  s.dependency 'EasyPeasy'
 end
