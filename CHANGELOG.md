@@ -1,5 +1,8 @@
 # Changelog Einsteinium
 
+## v1.1.1 (10-10-2018)
+- Remove DesignableXib
+
 ## v1.1.0 (18-09-2018)
 - Updated to Swift 4.2 / Xcode 10
 
