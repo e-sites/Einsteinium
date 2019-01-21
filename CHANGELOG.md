@@ -1,5 +1,8 @@
 # Changelog Einsteinium
 
+## v1.1.2 (18-09-2018)
+- DesignableXibView
+
 ## v1.1.0 (18-09-2018)
 - Updated to Swift 4.2 / Xcode 10
 

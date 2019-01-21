@@ -16,6 +16,10 @@ extension UIView {
      Absolute position is the position of the element on the screen
      */
     public var absoluteFrame: CGRect {
+        return absoluteFrame(relativeTo: nil)
+    }
+
+    public func absoluteFrame(relativeTo relativeView: UIView? = nil) -> CGRect {
         var frame = bounds
         var parent = self
         while true {
@@ -30,6 +34,12 @@ extension UIView {
             frame.origin.y += parent.frame.origin.y
             parent = superview
         }
+
+        if let relativeView = relativeView {
+            let relativeFrame = relativeView.absoluteFrame
+            frame.origin.y -= relativeFrame.origin.y
+        }
+
         return frame
     }
     

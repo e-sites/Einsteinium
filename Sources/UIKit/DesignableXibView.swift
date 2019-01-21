@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class DesignableXib: UIView {
+open class DesignableXibView: UIView {
 
     private var nibName: String {
         return String(describing: type(of: self))
