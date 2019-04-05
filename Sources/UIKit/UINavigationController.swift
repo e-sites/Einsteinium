@@ -18,7 +18,7 @@ extension UINavigationController {
         defer {
             popViewController(animated: animated)
         }
-        guard let index = viewControllers.index(of: viewController), index > 0 else {
+        guard let index = viewControllers.firstIndex(of: viewController), index > 0 else {
             return
         }
 

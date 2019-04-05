@@ -1,5 +1,8 @@
 # Changelog Einsteinium
 
+## v1.2.0 (05-04-2019)
+- Swift 5.0
+
 ## v1.1.2 (18-09-2018)
 - DesignableXibView
 
