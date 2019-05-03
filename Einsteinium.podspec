@@ -10,5 +10,4 @@ Pod::Spec.new do |s|
   s.source_files = "Sources/**/*.{h,swift}"
   s.platform     = :ios, '9.0'
   s.requires_arc = true
-  s.dependency 'EasyPeasy'
 end
