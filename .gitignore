@@ -18,7 +18,7 @@ DerivedData
 *.ipa
 *.xcuserstate
 lcov/
-
+.build
 Preview.html
 fastlane/test_output
 fastlane/screenshots/screenshots.html
