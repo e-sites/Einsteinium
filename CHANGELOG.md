@@ -1,6 +1,6 @@
 # Changelog Einsteinium
 
-## v1.2.2 (24-02-2020)
+## v1.2.3 (24-02-2020)
 - `String.truncate()`
 
 ## v1.2.1 (18-09-2019)
