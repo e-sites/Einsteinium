@@ -38,6 +38,10 @@ public func =~ (string: String, regex: String) -> Bool {
 }
 
 extension String {
+    public func truncate(length: Int, trailing: String = "") -> String {
+        return count > length ? prefix(length - trailing.count) + trailing : self
+    }
+
     public func capturedGroups(withRegex pattern: String) -> [String] {
         var results: [String] = []
 

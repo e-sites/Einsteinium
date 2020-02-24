@@ -18,15 +18,14 @@ extension URL {
         let array = query.components(separatedBy: "&")
         
         for keyValueString in array {
-            var parts = keyValueString.components(separatedBy: "=")
-            if parts.count < 2 {
+            let parts = keyValueString.components(separatedBy: "=")
+            guard parts.count == 2,
+                let key = parts.first?.removingPercentEncoding,
+                let value = parts.last?.removingPercentEncoding else {
                 continue
             }
             
-            let key = parts[0].removingPercentEncoding!
-            let value = parts[1].removingPercentEncoding!
-            
-            var values = dictionary[key] ?? [String]()
+            var values: [String] = dictionary[key] ?? []
             values.append(value)
             dictionary[key] = values
         }
