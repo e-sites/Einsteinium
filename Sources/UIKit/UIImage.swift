@@ -10,20 +10,20 @@ import Foundation
 import UIKit
 
 extension UIImage {
-    public func resize(width: CGFloat) -> UIImage? {
+    public func resize(width: CGFloat, useDeviceScale: Bool = true) -> UIImage? {
         let aspectRatio = self.size.width / self.size.height
         let size = CGSize(width: width, height: width / aspectRatio)
-        return resize(size: size)
+        return resize(size: size, useDeviceScale: useDeviceScale)
     }
     
-    public func resize(height: CGFloat) -> UIImage? {
+    public func resize(height: CGFloat, useDeviceScale: Bool = true) -> UIImage? {
         let aspectRatio = self.size.width / self.size.height
         let size = CGSize(width: height * aspectRatio, height: height)
-        return resize(size: size)
+        return resize(size: size, useDeviceScale: useDeviceScale)
     }
     
-    public func resize(size: CGSize) -> UIImage? {
-        UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+    public func resize(size: CGSize, useDeviceScale: Bool = true) -> UIImage? {
+        UIGraphicsBeginImageContextWithOptions(size, false, useDeviceScale ? 0.0 : 1.0)
         
         draw(in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
         let newImage = UIGraphicsGetImageFromCurrentImageContext()

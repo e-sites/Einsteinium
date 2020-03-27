@@ -1,5 +1,8 @@
 # Changelog Einsteinium
 
+## v1.2.4 (27-03-2020)
+- Use device scale for resizing images
+
 ## v1.2.3 (24-02-2020)
 - `String.truncate()`
 
