@@ -8,13 +8,14 @@
 
 import Foundation
 import UIKit
+import Logging
 
 extension UIViewController {
-    public class var upmost: UIViewController {
+    public class var upmost: UIViewController? {
         var viewController = root
         while true {
-            if let pres = viewController.presentedViewController, pres.isBeingDismissed == false {
-                viewController = pres
+            if let presentedViewController = viewController?.presentedViewController, presentedViewController.isBeingDismissed == false {
+                viewController = presentedViewController
             } else {
                 break
             }
@@ -23,14 +24,17 @@ extension UIViewController {
         return viewController
     }
     
-    public class var root: UIViewController {
+    public class var root: UIViewController? {
         guard let window = UIApplication.shared.keyWindow else {
-            preconditionFailure("No keyWindow")
+            logger.error("No keyWindow")
+            return nil
         }
         
         guard let viewController = window.rootViewController else {
-            preconditionFailure("No rootViewController")
+            logger.error("No rootViewController")
+            return nil
         }
+        
         return viewController
     }
 }

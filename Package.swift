@@ -10,11 +10,14 @@ let package = Package(
         .library(name: "Einsteinium", targets: ["Einsteinium"])
     ],
     dependencies: [
+        .package(url: "https://github.com/apple/swift-log.git", from: "1.0.0"),
     ],
     targets: [
         .target(
             name: "Einsteinium",
-            dependencies: [ ],
+            dependencies: [
+                "Logging"
+            ],
             path: "Sources"
         )
     ]
